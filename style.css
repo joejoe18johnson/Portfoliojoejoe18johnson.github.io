@@ -1,8 +1,7 @@
 body{
   font-family: "DM Sans", sans-serif;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   background-color: var(--white);
-  overflow:initial !important;
   font-size: 12px;
 }
 
@@ -621,14 +620,20 @@ textarea{
   /* border-bottom: 10px solid var(--green); */
 }
 
+
 .back-to-top{
- display: inline-flex;
- justify-content: end;
   align-items: center;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* align-items: center; */
   background-color: var(--green);
   width: 80px;
   height: 80px;
-border-radius: 50%;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
 
 
 }
