@@ -53,8 +53,9 @@ nav{
   /* position: fixed;
   bottom: 0; */
   display: flex;
-  padding:12px 61px;
+  padding:5px 61px;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
   margin: auto 0;
   gap: 20px;
@@ -79,7 +80,6 @@ nav{
 
 }
 
-
 .nav-middle ul li, .nav-middle a{
  
   display: inline-flex;
@@ -92,9 +92,6 @@ nav{
   margin: auto 50px;
   cursor: pointer;
 } 
-
-
-
 
 .nav-right {
   cursor: pointer;
@@ -171,10 +168,10 @@ header{
  color: var(--green);
  margin: 0;
 
- overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .10em solid var(--green); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+ overflow: hidden; 
+  border-right: .06em solid var(--green); 
+  white-space: nowrap; 
+  margin: 0 auto; 
 
   animation: 
     typing 2.5s steps(30, end),
@@ -197,11 +194,7 @@ header{
  font-size: 1.5rem;
  color: var(--dark);
  margin: 0;
- /* font-family: "Pacifico", cursive; */
- /* line-height: .1; */
 }
-
-
 
 header .profile-image img{
   border-radius: 50%;
@@ -275,9 +268,7 @@ header .cta{
 }
 
 .connect{
-  /* position: sticky; */
-  /* display: flex; */
-  /* width: 50%; */
+
   max-width: 60%;
   margin:100px auto;
   gap: 50px;
@@ -287,8 +278,7 @@ header .cta{
   background-color:none;
   padding: 20px 40px;
   border: none;
-  border-radius: 90px;
- 
+  border-radius: 90px; 
   /* padding-top: 30px; */
 }
 
@@ -318,7 +308,7 @@ header .cta{
   /* background-color:var(--green); */
   background-color:var(--grey);
   width:80%;
-  margin: 180px auto;
+  margin: 10px auto;
   /* align-items: center; */
   justify-content: center;
   padding: 100px 20px;
@@ -425,7 +415,6 @@ width: 80%;
   color: var(--dark);
 }
 
-
 .exp-edu{
   padding: 30px 50px;
   display: flex;
@@ -434,7 +423,7 @@ width: 80%;
   justify-content: center;
   gap: 200px;
   margin: 0 auto;
-
+  border-left: dashed orange 2px;
 }
 
 .education-item{
@@ -455,12 +444,23 @@ width: 80%;
 
 .edu-info:before{
   position: absolute;
-  height: 55px;
+  height: 59px;
 padding-right: 95px;
   left: -15px;
   top: 0px;
   content: '';
-  border-left: solid 2px var(--green);
+  border-left: dashed 2px var(--green);
+}
+
+.edu-info:after{
+  background-color: var(--dark);
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: -22px;
+  top: 22px;
+  border-radius: 50%;
+  content: '';
 }
 
 .education h1{
@@ -483,12 +483,11 @@ padding-right: 95px;
 
 }
 
-
 .work-exp{
+  padding-right: 50px;
   align-items: self-end;
+  border-right: dashed orange 2px;
 }
-
-
 
 .work-exp h1{
   display: block;
@@ -518,12 +517,23 @@ padding-right: 95px;
 
 .exp-info:before{
   position: absolute;
-  height: 75px;
+  height: 90px;
 padding-right: 95px;
   left: -15px;
   top: 0px;
   content: '';
-  border-left: solid 2px var(--green);
+  border-left: dashed 2px var(--green);
+}
+
+.exp-info:after{
+  background-color: var(--dark);
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: -22px;
+  top: 35px;
+  border-radius: 50%;
+  content: '';
 }
 
 
@@ -624,31 +634,13 @@ border-radius: 50%;
 }
 
 
+/* My Site Keyframes */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: var(--green)}
