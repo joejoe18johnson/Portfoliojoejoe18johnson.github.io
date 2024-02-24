@@ -3,6 +3,7 @@ body{
   /* box-sizing: border-box; */
   background-color: var(--white);
   overflow:initial !important;
+  font-size: 12px;
 }
 
 :root{
