@@ -388,7 +388,10 @@ header .cta{
 }
 
 .about-right{
-  width: 50%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-right h3{
@@ -408,7 +411,15 @@ align-items: center;
 .about-right-top p{
 font-size: .9rem;
 color: var(--dark);
-width: 80%;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+
+.about-right-top{
+  width: 80%;
+  display: flex;
+
 }
 
 
