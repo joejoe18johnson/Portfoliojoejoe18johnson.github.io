@@ -17,6 +17,12 @@ body{
   --freelancer: #0457d3;
 }
 
+button a{
+  text-decoration: none;
+  list-style: none;
+  color: var(--dark);
+}
+
 .cta a{
   text-decoration: none;
   list-style: none;
@@ -86,6 +92,8 @@ nav{
 } 
 
 
+
+
 .nav-right {
   cursor: pointer;
   display: flex;
@@ -113,6 +121,8 @@ button:hover{
   cursor: pointer;
   color: var(--green);
   cursor: pointer;
+  border-top:4px dashed var(--green) ;
+  overflow: hidden;
   
 
 } 
@@ -134,7 +144,8 @@ button:hover{
 }
 
 header{
- 
+ background-image: url(/assets/bg-01.svg);
+ object-fit: cover;
   display: flex;
   align-items: center;
   width: 100%;
@@ -153,10 +164,20 @@ header{
   align-items: center ;
 }
 .header-left h1{
+  font-weight: 600;
   display: block;
  font-size: 3.5rem;
  color: var(--green);
  margin: 0;
+
+ overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid var(--green); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
  /* font-family: "Pacifico", cursive; */
  /* line-height: .1; */
 }
@@ -599,4 +620,35 @@ textarea{
 border-radius: 50%;
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--green)}
 }
