@@ -336,12 +336,14 @@ header .cta{
 
 .about{
   display: flex;
+  margin-left:  auto;
   /* background-color:var(--green); */
+  gap: 200px;
   background-color:var(--grey);
   align-items: center;
   width:80%;
   margin: 30px auto;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   padding: 77px 20px;
   border-radius: 30px;
@@ -391,7 +393,8 @@ header .cta{
   width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  /* justify-content: center; */
 }
 
 .about-right h3{
@@ -409,6 +412,8 @@ align-items: center;
 }
 
 .about-right-top p{
+  display: flex;
+  flex-direction: column;
 font-size: .9rem;
 color: var(--dark);
 width: 100%;
@@ -419,6 +424,7 @@ justify-content: center;
 .about-right-top{
   width: 80%;
   display: flex;
+  flex-direction: column;
 
 }
 
