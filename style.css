@@ -337,7 +337,7 @@ header .cta{
 .about{
   display: flex;
   /* background-color:var(--green); */
-  gap: 90px;
+  gap: 40px;
   background-color:var(--grey);
   align-items: center;
   width:80%;
