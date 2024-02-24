@@ -50,8 +50,8 @@ button a{
 
 nav{
   width: 100vw;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   display: flex;
   padding:12px 61px;
   justify-content: space-between;
@@ -75,7 +75,8 @@ nav{
   gap: 50px;
   margin:  0px;
   cursor: pointer;
-  color: var(--grey)
+  color: var(--grey);
+
 }
 
 
@@ -122,7 +123,6 @@ button:hover{
   cursor: pointer;
   color: var(--green);
   cursor: pointer;
-  border-top:4px dashed var(--green) ;
   overflow: hidden;
   
 
